@@ -1,6 +1,8 @@
+
+from django.db.models import F
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponseRedirect, Http404
-from .models import Question, choice
+from django.http import HttpResponseRedirect, Http404, HttpResponse
+from .models import Choice, Question
 from django.urls import reverse
 
 
